@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Apple Pick Word Game</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Apple Pick Word Game</h1>
+      <p>Click the apple and guess the word...</p>
+    </div>
+
+    <div class="game-container">
+      <svg height="800" width="850" class="figure-container">
+        <!-- Tree Stem-->
+        <line x1="450" y1="130" x2="450" y2="200" />
+        <line x1="550" y1="130" x2="550" y2="240" />
+        <!-- Base of the tree -->
+        <path d="M 220 250 q 100 -100 200 0" fill="none" />
+        <path d="M 340 250 q 100 -100 200 0" fill="none" />
+        <path d="M 420 250 q 100 -100 200 0" fill="none" />
+        <path d="M 540 250 q 100 -100 200 0" fill="none" />
+        <!-- Tree Leaves -->
+        <!-- <path d="M 430 10 q 1 110 50 120" fill="none" stroke="green" />
+        <path d="M 530 10 q 225 10 10 120" fill="none" stroke="green" />
+        <path d="M 330 60 q 100 -100 200 0" fill="none" stroke="green" /> -->
+
+        <ellipse cx="500" cy="70" rx="220" ry="60" style="stroke: green;" />
+
+        <!-- Apples -->
+        <circle
+          cx="320"
+          cy="70"
+          r="10"
+          stroke-width="0.1"
+          fill="red"
+          class="apple"
+        />
+        <circle
+          cx="440"
+          cy="50"
+          r="10"
+          stroke-width="0.1"
+          fill="red"
+          class="apple"
+        />
+        <circle
+          cx="530"
+          cy="40"
+          r="10"
+          stroke-width="0.1"
+          fill="red"
+          class="apple"
+        />
+        <circle
+          cx="580"
+          cy="80"
+          r="10"
+          stroke-width="0.1"
+          fill="red"
+          class="apple"
+        />
+        <circle
+          cx="610"
+          cy="40"
+          r="10"
+          stroke-width="0.1"
+          fill="red"
+          class="apple"
+        />
+        <circle
+          cx="670"
+          cy="60"
+          r="10"
+          stroke-width="0.1"
+          fill="red"
+          class="apple"
+        />
+      </svg>
+
+      <div class="wrong-letters-container">
+        <div id="wrong-letters">
+          <!-- <p>Wrong</p>
+          <span>e,r,t,y</span> -->
+        </div>
+      </div>
+
+      <div class="word" id="word">
+        <!-- <div class="letter">o</div>
+<div class="letter">h</div> 
+        <div class="letter">e</div>
+        <div class="letter">l</div>
+        <div class="letter">l</div>  -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Container for final message -->
+  <div class="popup-container" id="popup-container">
+    <div class="popup">
+      <h2 id="final-message"></h2>
+      <button id="play-button">Play Again</button>
+    </div>
+  </div>
+
+  <div class="notification-container" id="notification-container">
+    <p>You have alreay entered this letter</p>
+  </div>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>
